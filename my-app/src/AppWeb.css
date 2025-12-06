@@ -1,0 +1,136 @@
+/* === LAYOUT PRINCIPAL === */
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    font-family: Poppins, sans-serif;
+}
+
+/* === SIDEBAR === */
+.sidebar {
+    width: 240px;
+    background:#323249;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-title {
+    font-size: 12px;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.sidebar-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.sidebar-item.active,
+.sidebar-item:hover {
+    background: rgba(255,255,255,0.1);
+    opacity: 1;
+}
+
+.sidebar-section {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+/* === CONTENIDO === */
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+/* Titulos */
+.header-title {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.header-sub {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+/* === BOTONES === */
+.toolbar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background: #e3e3e3;
+    cursor: pointer;
+}
+
+.select-lead {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+
+/* === GRÁFICO === */
+.apple-plot-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 40px;
+}
+
+/* === INFORMACIÓN USUARIO === */
+.divider {
+    margin: 40px 0;
+    border-color: #ccc;
+}
+
+.info-title {
+    font-size: 18px;
+}
+
+
+/* LOGO fijo arriba a la DERECHA, responsivo */
+.top-right-logo {
+    position: absolute;
+    top: 50px;
+    right: 100px;      /* ← aquí cambiamos left → right */
+    width: 120px;
+    max-width: 22vw;
+    height: auto;
+    z-index: 9999;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #fff;
+    padding: 4px;
+}
+
+/* Imagen recortada tipo máscara */
+.top-right-logo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Ajustes móviles */
+@media (max-width: 600px) {
+    .top-right-logo {
+        width: 90px;
+        top: 8px;
+        right: 8px;
+        border-radius: 10px;
+    }
+}
