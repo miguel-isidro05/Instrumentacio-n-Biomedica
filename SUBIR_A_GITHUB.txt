@@ -1,0 +1,94 @@
+═══════════════════════════════════════════════════════════════
+   🚀 INSTRUCCIONES RÁPIDAS PARA SUBIR A GITHUB
+═══════════════════════════════════════════════════════════════
+
+✅ TODO ESTÁ LISTO! Sigue estos pasos:
+
+PASO 1: Crear Repositorio en GitHub
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Ve a https://github.com/new
+2. Nombre del repositorio: holter-ecg-iot
+3. Descripción: Holter de 3 derivaciones con IoT
+4. ⚠️ NO marques "Initialize with README"
+5. Clic en "Create repository"
+
+PASO 2: Conectar y Subir
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Copia y pega estos comandos en tu terminal:
+
+cd "/Users/miguel_05/Desktop/Academico/Universidad/Octavo Ciclo/Instrumentación Biomedica"
+
+git remote add origin https://github.com/TU_USUARIO/holter-ecg-iot.git
+
+git push -u origin main
+
+⚠️ IMPORTANTE: Reemplaza TU_USUARIO con tu nombre de usuario de GitHub
+
+PASO 3: Autenticación
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Cuando te pida credenciales:
+- Usuario: tu_usuario_de_github
+- Contraseña: usa un Personal Access Token (NO tu contraseña)
+
+Para crear el token:
+1. GitHub → Settings → Developer settings
+2. Personal access tokens → Tokens (classic)
+3. Generate new token → Marca "repo"
+4. Copia el token y úsalo como contraseña
+
+═══════════════════════════════════════════════════════════════
+
+📋 LO QUE SE INCLUYE EN GITHUB:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ README.md completo con documentación
+✅ main.py (API con credenciales protegidas)
+✅ my-app/ (Aplicación web React)
+✅ my-app-cardio/ (Aplicación móvil Expo)
+✅ requirements.txt (Dependencias Python)
+✅ .gitignore (Archivos ignorados)
+✅ GITHUB_SETUP.md (Instrucciones detalladas)
+
+🔒 LO QUE NO SE SUBE (Protegido):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ .env (Credenciales de Azure)
+❌ node_modules/
+❌ __pycache__/
+❌ Archivos temporales
+
+═══════════════════════════════════════════════════════════════
+
+🎯 DESPUÉS DE SUBIR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Ve a tu repositorio: https://github.com/TU_USUARIO/holter-ecg-iot
+2. Verifica que todos los archivos estén ahí
+3. ¡Comparte el link con tu equipo!
+
+═══════════════════════════════════════════════════════════════
+
+💡 COMANDOS ÚTILES PARA EL FUTURO:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Ver estado:        git status
+Agregar cambios:   git add .
+Hacer commit:      git commit -m "Descripción"
+Subir cambios:     git push
+Ver historial:     git log --oneline
+
+═══════════════════════════════════════════════════════════════
+
+🔐 SEGURIDAD:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Tus credenciales de Azure están protegidas
+✅ El archivo .env está en tu computadora (no en GitHub)
+✅ El código usa variables de entorno
+✅ Nadie puede ver tus claves de Cosmos DB
+
+═══════════════════════════════════════════════════════════════
+
+📞 ¿NECESITAS AYUDA?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Lee el archivo GITHUB_SETUP.md para instrucciones detalladas.
+
+═══════════════════════════════════════════════════════════════
+   ¡ÉXITO! Tu proyecto está listo para GitHub 🎉
+═══════════════════════════════════════════════════════════════
+
